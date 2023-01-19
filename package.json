@@ -1,0 +1,22 @@
+{
+  "name": "ask-readline",
+  "version": "1.0.0",
+  "description": "Ask a question for CLI using readline, supports muted input",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuKks/ask-readline.git"
+  },
+  "author": "Lucas Barrena (LuKks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuKks/ask-readline/issues"
+  },
+  "homepage": "https://github.com/LuKks/ask-readline",
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
+}
