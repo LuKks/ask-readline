@@ -13,10 +13,10 @@ const ask = require('ask-readline')
 main()
 
 async function main () {
-  const username = await ask('Input your username (clear): ', { clear: true })
-  const password = await ask('Input your password (clear and muted): ', { clear: true, muted: true })
-  const twoFactorAuth = await ask('Input your 2fa (keep but muted): ', { clear: false, muted: true })
-  const alias = await ask('Input your alias (default): ')
+  const username = await ask('Input username (clear): ', { clear: true })
+  const password = await ask('Input password (clear and muted): ', { clear: true, muted: true })
+  const twoFactorAuth = await ask('Input 2fa (keep but muted): ', { clear: false, muted: true })
+  const alias = await ask('Input alias (default): ')
 
   console.log({ username, password, twoFactorAuth, alias })
 }
