@@ -32,8 +32,8 @@ If user does `CTRL+C` then answer is `null`.
 Available `options`:
 ```js
 {
-	clear: false,
-	muted: false
+  clear: false,
+  muted: false
 }
 ```
 
