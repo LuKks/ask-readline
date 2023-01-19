@@ -1,6 +1,6 @@
 {
   "name": "ask-readline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ask a question for CLI using readline, supports muted input",
   "main": "index.js",
   "scripts": {
