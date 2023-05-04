@@ -12,6 +12,17 @@ module.exports = function ask (query = '', opts = {}) {
       if (typeof stringToWrite !== 'string') throw new Error('Invalid arg type')
       if (this.output === null || this.output === undefined) return
 
+      if (opts.oninput) {
+        const value = stringToWrite.trim()
+
+        if (opts.oninput(value)) {
+          answer = value
+          rl.close()
+        }
+
+        return
+      }
+
       const end = stringToWrite === '\r\n' || stringToWrite === '\n'
 
       if (!opts.muted || end) {
